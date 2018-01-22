@@ -44,9 +44,21 @@ files:
         'zh-CN': 'zh-Hans'
         'zh-TW': 'zh-Hant'
   -
-    source: '/content/blog/*.md'
-    translation: '/docs/%locale%/blog/%original_file_name%'
+    source: '/content/home/examples/*.md'
+    translation: '/docs/%locale%/home/examples/%original_file_name%'
     languages_mapping: *anchor
+  -
+    source: '/content/home/marketing/*.md'
+    translation: '/docs/%locale%/home/marketing/%original_file_name%'
+    languages_mapping: *anchor
+  -
+    source: '/content/warnings/*.md'
+    translation: '/docs/%locale%/warnings/%original_file_name%'
+    languages_mapping: *anchor
+  # -
+  #   source: '/content/blog/*.md'
+  #   translation: '/docs/%locale%/blog/%original_file_name%'
+  #   languages_mapping: *anchor
   -
     source: '/content/tutorial/*.md'
     translation: '/docs/%locale%/tutorial/%original_file_name%'
