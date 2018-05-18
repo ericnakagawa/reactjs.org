@@ -6,66 +6,87 @@ preserve_hierarchy: true
 files:
   -
     source: '/content/docs/*.md'
-    translation: '/docs/%locale%/docs/%original_file_name%'
+    translation: '/content/i18n/%locale%/docs/%original_file_name%'
     languages_mapping: &anchor
       locale:
-        'af': 'af'
-        'ar': 'ar'
-        'bs-BA': 'bs-BA'
-        'ca': 'ca'
-        'cs': 'cs'
-        'da': 'da'
-        'de': 'de'
-        'el': 'el'
-        'es-ES': 'es-ES'
-        'fa': 'fa-IR'
-        'fi': 'fi'
-        'fr': 'fr'
-        'he': 'he'
-        'hu': 'hu'
-        'id': 'id-ID'
-        'it': 'it'
-        'ja': 'ja'
-        'ko': 'ko'
-        'mr': 'mr-IN'
-        'nl': 'nl'
-        'no': 'no-NO'
-        'pl': 'pl'
-        'pt-BR': 'pt-BR'
-        'pt-PT': 'pt-PT'
-        'ro': 'ro'
-        'ru': 'ru'
-        'sk': 'sk-SK'
-        'sr': 'sr'
-        'sv-SE': 'sv-SE'
-        'tr': 'tr'
-        'uk': 'uk'
-        'vi': 'vi'
-        'zh-CN': 'zh-Hans'
-        'zh-TW': 'zh-Hant'
+        # 'af': 'af' # Afrikaans
+        'ar': 'ar' # Arabic
+        # 'bs-BA': 'bs-BA' # Bosnian
+        'bn': 'bn' # Bengali
+        # 'ca': 'ca' #  Catalan
+        'cs': 'cs' # Czech
+        'da': 'da' # Danish
+        'de': 'de' # German
+        'el': 'el' # Greek
+        'es-ES': 'es-ES' # Spanish
+        'es-CO': 'es-CO' # Spanish, Colombia
+        'es-MX': 'es-MX' # Spanish, Mezico
+        # 'fa': 'fa-IR' # Persian
+        # 'fi': 'fi' # Finnish
+        'fr': 'fr' # French
+        # 'he': 'he' # Hebrew
+        'hu': 'hu' # Hungarian
+        'id': 'id' # Indonesian
+        'it': 'it' # Italian
+        'ja': 'ja' # Japanese
+        'ka': 'ka' # Georgian
+        'ko': 'ko' # Korean
+        'ku': 'ku' # Kurdish
+        'ms': 'ms' # Malay
+        # 'mr': 'mr-IN' # Marathi
+        # 'nl': 'nl' # Dutch
+        'no': 'no-NO' # Norwegian
+        'pl': 'pl' # Polish
+        'pt-BR': 'pt-BR' # Portuguese, Brazilian
+        'pt-PT': 'pt-PT' # Portuguese
+        'ro': 'ro' # Romanian
+        'ru': 'ru' # Russian
+        # 'sk': 'sk-SK' # Slovak
+        'sl': 'sl' # Slovenian
+        # 'sr': 'sr' # Serbian
+        # 'sv-SE': 'sv-SE' # Swedish
+        'tl': 'tl' # Tagalog
+        'tr': 'tr' # Turkish
+        # 'uk': 'uk' # Ukranian
+        'ur-PK': 'ur-PK' # Urdu, Pakistan
+        'vi': 'vi' # Vietnamese
+        'zh-CN': 'zh-Hans' # Chinese Simplified
+        'zh-TW': 'zh-Hant' # Chinese Traditional
   -
-    source: '/content/docs/nav.md'
-    translation: '/docs/%locale%/%original_file_name%'
+    source: '/content/*.yml'
+    translation: '/content/i18n/%locale%/%original_file_name%'
+    languages_mapping: *anchor
+  -
+    source: '/content/community/nav.yml'
+    translation: '/content/i18n/%locale%/community/%original_file_name%'
+    languages_mapping: *anchor
+  -
+    source: '/content/tutorial/nav.yml'
+    translation: '/content/i18n/%locale%/tutorial/%original_file_name%'
+    languages_mapping: *anchor
+  -
+    source: '/content/docs/nav.yml'
+    translation: '/content/i18n/%locale%/docs/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/home/marketing/*.md'
-    translation: '/docs/%locale%/home/marketing/%original_file_name%'
+    translation: '/content/i18n/%locale%/home/marketing/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/home/examples/*.md'
-    translation: '/docs/%locale%/home/examples/%original_file_name%'
+    translation: '/content/i18n/%locale%/home/examples/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/blog/*.md'
-    translation: '/docs/%locale%/blog/%original_file_name%'
+    translation: '/content/i18n/%locale%/blog/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/tutorial/*.md'
-    translation: '/docs/%locale%/tutorial/%original_file_name%'
+    translation: '/content/i18n/%locale%/tutorial/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/community/*.md'
-    translation: '/docs/%locale%/community/%original_file_name%'
+    translation: '/content/i18n/%locale%/community/%original_file_name%'
     ignore:
       - '/content/community/complementary-tools.it-IT.md'
       - '/content/community/complementary-tools.ko-KR.md'
@@ -82,17 +103,17 @@ files:
     languages_mapping: *anchor
   -
     source: '/content/contributing/*.md'
-    translation: '/docs/%locale%/contributing/%original_file_name%'
+    translation: '/content/i18n/%locale%/contributing/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/content/warnings/*.md'
-    translation: '/docs/%locale%/warnings/%original_file_name%'
+    translation: '/content/i18n/%locale%/warnings/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/README.md'
-    translation: '/docs/%locale%/README.md'
+    translation: '/content/i18n/%locale%/README.md'
     languages_mapping: *anchor
   -
     source: '/content/404.md'
-    translation: '/docs/%locale%/404.md'
+    translation: '/content/i18n/%locale%/404.md'
     languages_mapping: *anchor
