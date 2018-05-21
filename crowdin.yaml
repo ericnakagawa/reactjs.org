@@ -5,8 +5,8 @@ preserve_hierarchy: true
 
 files:
   -
-    source: '/content/docs/*.md'
-    translation: '/content/i18n/%locale%/docs/%original_file_name%'
+    source: '/content/en-US/docs/*.md'
+    translation: '/content/%locale%/docs/%original_file_name%'
     languages_mapping: &anchor
       locale:
         # 'af': 'af' # Afrikaans
@@ -53,67 +53,63 @@ files:
         'zh-CN': 'zh-Hans' # Chinese Simplified
         'zh-TW': 'zh-Hant' # Chinese Traditional
   -
-    source: '/content/*.yml'
-    translation: '/content/i18n/%locale%/%original_file_name%'
+    source: '/content/en-US/community/nav.yml'
+    translation: '/content/%locale%/community/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/community/nav.yml'
-    translation: '/content/i18n/%locale%/community/%original_file_name%'
+    source: '/content/en-US/tutorial/nav.yml'
+    translation: '/content/%locale%/tutorial/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/tutorial/nav.yml'
-    translation: '/content/i18n/%locale%/tutorial/%original_file_name%'
+    source: '/content/en-US/docs/nav.yml'
+    translation: '/content/%locale%/docs/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/docs/nav.yml'
-    translation: '/content/i18n/%locale%/docs/%original_file_name%'
+    source: '/content/en-US/home/marketing/*.md'
+    translation: '/content/%locale%/home/marketing/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/home/marketing/*.md'
-    translation: '/content/i18n/%locale%/home/marketing/%original_file_name%'
+    source: '/content/en-US/home/examples/*.md'
+    translation: '/content/%locale%/home/examples/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/home/examples/*.md'
-    translation: '/content/i18n/%locale%/home/examples/%original_file_name%'
+    source: '/content/en-US/blog/*.md'
+    translation: '/content/%locale%/blog/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/blog/*.md'
-    translation: '/content/i18n/%locale%/blog/%original_file_name%'
+    source: '/content/en-US/tutorial/*.md'
+    translation: '/content/%locale%/tutorial/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/tutorial/*.md'
-    translation: '/content/i18n/%locale%/tutorial/%original_file_name%'
-    languages_mapping: *anchor
-  -
-    source: '/content/community/*.md'
-    translation: '/content/i18n/%locale%/community/%original_file_name%'
+    source: '/content/en-US/community/*.md'
+    translation: '/content/%locale%/community/%original_file_name%'
     ignore:
-      - '/content/community/complementary-tools.it-IT.md'
-      - '/content/community/complementary-tools.ko-KR.md'
-      - '/content/community/complementary-tools.zh-CN.md'
-      - '/content/community/conferences.it-IT.md'
-      - '/content/community/conferences.ko-KR.md'
-      - '/content/community/conferences.zh-CN.md'
-      - '/content/community/examples.it-IT.md'
-      - '/content/community/examples.ko-KR.md'
-      - '/content/community/examples.zh-CN.md'
-      - '/content/community/videos.it-IT.md'
-      - '/content/community/videos.ko-KR.md'
-      - '/content/community/videos.zh-CN.md'
+      - '/content/en-US/community/complementary-tools.it-IT.md'
+      - '/content/en-US/community/complementary-tools.ko-KR.md'
+      - '/content/en-US/community/complementary-tools.zh-CN.md'
+      - '/content/en-US/community/conferences.it-IT.md'
+      - '/content/en-US/community/conferences.ko-KR.md'
+      - '/content/en-US/community/conferences.zh-CN.md'
+      - '/content/en-US/community/examples.it-IT.md'
+      - '/content/en-US/community/examples.ko-KR.md'
+      - '/content/en-US/community/examples.zh-CN.md'
+      - '/content/en-US/community/videos.it-IT.md'
+      - '/content/en-US/community/videos.ko-KR.md'
+      - '/content/en-US/community/videos.zh-CN.md'
     languages_mapping: *anchor
   -
-    source: '/content/contributing/*.md'
-    translation: '/content/i18n/%locale%/contributing/%original_file_name%'
+    source: '/content/en-US/contributing/*.md'
+    translation: '/content/%locale%/contributing/%original_file_name%'
     languages_mapping: *anchor
   -
-    source: '/content/warnings/*.md'
-    translation: '/content/i18n/%locale%/warnings/%original_file_name%'
+    source: '/content/en-US/warnings/*.md'
+    translation: '/content/%locale%/warnings/%original_file_name%'
     languages_mapping: *anchor
   -
     source: '/README.md'
-    translation: '/content/i18n/%locale%/README.md'
+    translation: '/content/%locale%/README.md'
     languages_mapping: *anchor
   -
-    source: '/content/404.md'
-    translation: '/content/i18n/%locale%/404.md'
+    source: '/content/en-US/404.md'
+    translation: '/content/%locale%/404.md'
     languages_mapping: *anchor
